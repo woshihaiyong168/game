@@ -72,13 +72,13 @@ class Swoole extends Command
         $server = new \swoole_websocket_server("0.0.0.0",2555);
         $server->set(array(
             'worker_num' => 2,
-            //'daemonize' =>true,  //是否后台守护进程
-            'daemonize' =>false,  //是否后台守护进程
+            'daemonize' =>true,  //是否后台守护进程
+            //'daemonize' =>false,  //是否后台守护进程
             'max_request'=>10000,
             'dispatch_mode'=>2,
             'debug_mode'=> 0,
             'max_conn' => 10000,
-            //'log_file' => '/var/log/swoole/log.txt',
+            'log_file' => '/var/log/swoole/log.txt',
             'heartbeat_check_interval' => 60,
             'heartbeat_idle_time' => 600
         ));
