@@ -76,7 +76,7 @@ class Swoole extends Command
             'daemonize' =>false,  //是否后台守护进程
             'max_request'=>10000,
             'dispatch_mode'=>2,
-            'debug_mode'=>1,
+            'debug_mode'=> 0,
             'max_conn' => 10000,
             //'log_file' => '/var/log/swoole/log.txt',
             'heartbeat_check_interval' => 60,
